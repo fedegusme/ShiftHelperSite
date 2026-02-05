@@ -1,0 +1,5 @@
+Italiano:
+Shift Helper è progettata con la massima attenzione alla privacy: non raccogliamo alcun dato personale degli utenti. Non salviamo informazioni come nomi, email, posizioni o dettagli sui turni. Tutto avviene localmente sul tuo dispositivo, senza connessioni a server esterni. La tua privacy è la nostra priorità!
+
+English:
+Shift Helper is designed with utmost privacy in mind: we do not collect any user data. We don't store info like names, emails, locations, or shift details. Everything stays local on your device, with no connections to external servers. Your privacy comes first!
