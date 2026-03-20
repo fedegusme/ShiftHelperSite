@@ -3,83 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShiftHelper - Gestione Turni Semplice</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ShiftHelper - Il Futuro della Gestione Turni</title>
+    <meta name="description" content="ShiftHelper è l'applicazione enterprise pensata per gli store manager. Semplifica la gestione dei turni, assenze e straordinari.">
+    
+    <!-- Preconnect for fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header-content">
-            <div class="logo-container">
-                <img src="assets/logo.png" alt="ShiftHelper Logo" class="app-icon">
-                <span class="app-name">ShiftHelper</span>
+    <div class="glow-blob top-left"></div>
+    <div class="glow-blob top-right"></div>
+    <header class="header reveal-immediate">
+        <div class="container header-container">
+            <div class="brand">
+                <img src="assets/logo.png" alt="ShiftHelper Logo" class="brand-logo">
+                <span class="brand-text">ShiftHelper</span>
             </div>
-            <a href="mailto:gusmeroli.federico@outlook.it" class="btn btn-primary">Contattami</a>
+            <nav class="header-nav">
+                <a href="mailto:gusmeroli.federico@outlook.it" class="btn btn-glass">Contattami</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>La gestione turni,<br>finalmente semplice.</h1>
-                    <p class="subtitle">ShiftHelper è l'app pensata per gli store manager. Crea, distribuisci e gestisci i turni del tuo team in pochi tap.</p>
-                    <div class="hero-actions">
-                        <!-- Button removed -->
+        <!-- Hero Section -->
+        <section class="hero container reveal">
+            <div class="badge">Nuova Release Disponibile</div>
+            <h1 class="hero-title">La pianificazione turni, <br> <span class="text-gradient">senza compromessi.</span></h1>
+            <p class="hero-subtitle">
+                ShiftHelper ridisegna il paradigma dell'organizzazione aziendale. 
+                Piena visibilità sui turni, approvazione assenze e reportistica avanzata, 
+                tutto nel palmo della tua mano. Pensato per store manager esigenti.
+            </p>
+            <div class="hero-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.shiftscheduler.shifthelper" target="_blank" class="btn btn-store google-play">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4.33 1.933a1.95 1.95 0 00-.83 1.63v16.892c0 .64.29 1.23.83 1.63l10.87-10.07L4.33 1.933z" fill="#00e676"/>
+                        <path d="M16.92 14.516l-1.72-1.61 3.5-3.23 2.11 1.22c1.23.71 1.23 1.87 0 2.58l-3.89 1.04z" fill="#ff3d00"/>
+                        <path d="M5.16 22.083c.48.28 1.07.28 1.55 0l10.21-5.91-4.04-3.75-7.72 9.66z" fill="#ffc107"/>
+                        <path d="M5.16 1.917C4.68 1.637 4.09 1.637 3.61 1.917L12.88 11.5l4.04-3.75-11.76-5.833z" fill="#2196f3"/>
+                    </svg>
+                    <div class="store-text">
+                        <span class="store-sub">Disponibile su</span>
+                        <span class="store-main">Google Play</span>
+                    </div>
+                </a>
+                <div class="btn btn-store ios-store btn-disabled">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.36 10.3c-.04-2.88 2.37-4.28 2.48-4.35-1.34-1.95-3.41-2.2-4.14-2.22-1.75-.18-3.41 1.03-4.31 1.03-.9 0-2.25-1.02-3.7-1.01-1.89.02-3.63 1.1-4.6 2.78-1.97 3.42-.51 8.48 1.41 11.26.94 1.36 2.05 2.89 3.52 2.84 1.42-.05 1.96-.92 3.68-.92 1.71 0 2.21.92 3.7.89 1.52-.02 2.48-1.4 3.39-2.73 1.05-1.54 1.49-3.03 1.51-3.11-.03-.01-2.9-1.11-2.94-4.46zm-2.8-8.23c.78-.94 1.3-2.25 1.16-3.56-1.13.05-2.51.76-3.32 1.7-.65.73-1.27 2.08-1.1 3.36 1.26.1 2.49-.6 3.26-1.5z"/>
+                    </svg>
+                    <div class="store-text">
+                        <span class="store-sub">Coming soon per</span>
+                        <span class="store-main">iOS</span>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="assets/logo.png" alt="ShiftHelper App Preview" class="hero-app-icon">
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <div class="glass-mockup">
+                    <img src="assets/logo.png" alt="App Icon" class="mockup-icon">
+                    <div class="mockup-ui mockup-timeline">
+                        <div class="timeline-header">
+                            <div class="timeline-time">08:00</div>
+                            <div class="timeline-time">12:00</div>
+                            <div class="timeline-time">16:00</div>
+                            <div class="timeline-time">20:00</div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="mockup-avatar avatar-1">M</div>
+                            <div class="timeline-track">
+                                <div class="timeline-block block-blue" style="width: 40%; left: 0;">08:00-14:00</div>
+                                <div class="timeline-block block-gray" style="width: 15%; left: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="mockup-avatar avatar-2">L</div>
+                            <div class="timeline-track">
+                                <div class="timeline-block block-purple" style="width: 45%; left: 45%;">14:00-21:00</div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="mockup-avatar avatar-3">S</div>
+                            <div class="timeline-track">
+                                <div class="timeline-block block-green" style="width: 55%; left: 10%;">09:30-18:00</div>
+                            </div>
+                        </div>
+                        <div class="timeline-row border-none">
+                            <div class="mockup-avatar" style="background:#475569;">G</div>
+                            <div class="timeline-track">
+                                <div class="timeline-block block-red" style="width: 100%; left: 0%;">Assente (Malattia)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative elements -->
+                <div class="floating-badge badge-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Turni Coperti
+                </div>
+                <div class="floating-badge badge-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    0 Ore Scoperte
                 </div>
             </div>
         </section>
 
-        <section class="features">
+        <!-- Trust / Benefits -->
+        <section class="trust pb-large reveal">
             <div class="container">
-                <h2>Funzionalità Principali</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="icon-wrapper blue">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        </div>
-                        <h3>Calendario Turni</h3>
-                        <p>Visualizza e gestisci le settimane con facilità. Naviga tra le settimane passate e future con un'interfaccia intuitiva.</p>
+                <p class="trust-title">Dì addio ai fogli di calcolo disordinati</p>
+                <div class="trust-grid">
+                    <div class="trust-stat">
+                        <span class="stat-icon b-blue">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </span>
+                        <span class="stat-label">Veloce & Intuitivo</span>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="icon-wrapper red">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line></svg>
-                        </div>
-                        <h3>Gestione Assenze</h3>
-                        <p>Tieni traccia di malattie, ferie e permessi. Monitora le ore lavorate e gli straordinari per ogni dipendente.</p>
+                    <div class="trust-stat">
+                        <span class="stat-icon b-green">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </span>
+                        <span class="stat-label">Massima Sicurezza</span>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="icon-wrapper green">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                        </div>
-                        <h3>Distribuzione Turni</h3>
-                        <p>Gestisci le ore tra i membri del team e intervieni manualmente per un controllo totale.</p>
+                    <div class="trust-stat">
+                        <span class="stat-icon b-purple">
+                            <svg width="28" height="28" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                        </span>
+                        <span class="stat-label">Sempre Sincronizzato</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta">
-            <div class="container">
-                <h2>Pronto a semplificare il tuo lavoro?</h2>
-                <p>Contattami per avere maggiori informazioni o per provare l'applicazione.</p>
-                <a href="mailto:gusmeroli.federico@outlook.it" class="btn btn-primary btn-large">Invia una Mail</a>
+        <!-- Features Bento Box -->
+        <section id="features" class="features container reveal pb-large">
+            <div class="section-header">
+                <h2 class="section-title">Ingegneria della pianificazione</h2>
+                <p class="section-subtitle">Tutto ciò di cui hai bisogno per scalare le operations del tuo store, strutturato in un'interfaccia cristallina.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento Item 1 (Large) -->
+                <div class="bento-card bento-large">
+                    <div class="bento-icon-wrapper b-blue">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="16" x2="16" y1="2" y2="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="8" x2="8" y1="2" y2="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="3" x2="21" y1="10" y2="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Calendario Super-Potenziato</h3>
+                    <p>Naviga fluidamente tra le settimane lavorative. Visualizza la matrice esatta delle assegnazioni con un colpo d'occhio. La granularità che stavi cercando, senza il disordine.</p>
+                </div>
+
+                <!-- Bento Item 2 -->
+                <div class="bento-card">
+                    <div class="bento-icon-wrapper b-red">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3>Gestione Assenze</h3>
+                    <p>Ferie, malattie e permessi mappati e riconciliati automaticamente. Nessuna sovrapposizione inaspettata.</p>
+                </div>
+
+                <!-- Bento Item 3 -->
+                <div class="bento-card">
+                    <div class="bento-icon-wrapper b-green">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <h3>Controllo Costi ed Ore</h3>
+                    <p>Ogni singola ora lavorata calcolata precisamente, con alert automatici per gli straordinari in eccesso.</p>
+                </div>
+                
+                <!-- Bento Item 4 (Large) -->
+                <div class="bento-card bento-xlarge">
+                    <div class="bento-content-split">
+                        <div class="bento-split-text">
+                            <div class="bento-icon-wrapper b-purple">
+                                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3>Distribuzione Smart</h3>
+                            <p>Assegna i turni massimizzando l'efficienza. Il sistema garantisce che i giorni di riposo e i carichi settimanali siano bilanciati secondo le rigide regole dei contratti, fornendo notifiche proattive in caso di anomalie algoritmiche o manuali.</p>
+                        </div>
+                        <div class="bento-split-image glow-border">
+                            <!-- Visual placeholder for UI -->
+                            <div class="mini-calendar">
+                                <div class="mc-day mc-filled">L</div>
+                                <div class="mc-day mc-filled">M</div>
+                                <div class="mc-day mc-filled">M</div>
+                                <div class="mc-day mc-empty">G</div>
+                                <div class="mc-day mc-filled">V</div>
+                                <div class="mc-day mc-filled">S</div>
+                                <div class="mc-day mc-rest">D</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process container reveal pb-large">
+            <div class="section-header">
+                <h2 class="section-title">Dall'inserimento alla pubblicazione</h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4>Inserimento Ore</h4>
+                        <p>Definisci il monte ore necessario per il tuo store. Il sistema calcola il fabbisogno per ruolo e livello di responsabilità.</p>
+                    </div>
+                </div>
+                <!-- Connector Line -->
+                <div class="process-connector"></div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4>Drag & Drop Facile</h4>
+                        <p>Assegna, sposta o clona i turni in modo rapido. Risolvi i conflitti prima ancora che accadano.</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4>Confirm & Lock</h4>
+                        <p>Conferma la settimana. L'algoritmo convalida automaticamente i giorni di riposo e cristallizza la programmazione pronta per il team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smart CTA -->
+        <section class="cta-section container reveal pb-large">
+            <div class="cta-box glass-card">
+                <div class="glow-blob cta-glow"></div>
+                <h2>Eleva la gestione del tuo team</h2>
+                <p>Non sprecare un altro minuto su fogli di calcolo disordinati.<br>Contattami e iniziamo a costruire un planning perfetto.</p>
+                <div class="cta-actions">
+                    <a href="mailto:gusmeroli.federico@outlook.it" class="btn btn-primary btn-large cta-btn">
+                        Contatta lo Sviluppatore
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ShiftHelper. Tutti i diritti riservati.</p>
+    <footer class="footer border-top">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="ShiftHelper Logo" class="footer-icon">
+                <span>ShiftHelper</span>
+            </div>
+            <p class="footer-text">© 2026 ShiftHelper. Architettura gestionale d'eccellenza.</p>
         </div>
     </footer>
+
+    <!-- Reveal Animation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const reveals = document.querySelectorAll(".reveal");
+
+            const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+            
+            // Immediate reveal for elements already on screen
+            setTimeout(() => {
+                document.querySelectorAll(".reveal-immediate").forEach(el => {
+                    el.classList.add("active");
+                });
+            }, 100);
+            
+            // Apply slight parallelax to the blobs on mouse move
+            document.addEventListener('mousemove', (e) => {
+                const cx = window.innerWidth / 2;
+                const cy = window.innerHeight / 2;
+                const x = (e.clientX - cx) / 50;
+                const y = (e.clientY - cy) / 50;
+                
+                document.querySelectorAll('.glow-blob').forEach(blob => {
+                    blob.style.transform = `translate(${x}px, ${y}px)`;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
