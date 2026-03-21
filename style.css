@@ -192,6 +192,24 @@ a {
     gap: 16px;
     color: var(--text-primary);
     transition: all 0.3s ease;
+    position: relative;
+}
+
+.store-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--accent-gradient);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 100px;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    z-index: 10;
 }
 
 .btn-store:hover:not(.btn-disabled) {
