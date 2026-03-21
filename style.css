@@ -36,13 +36,18 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     background-color: var(--bg-base);
     color: var(--text-primary);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -120,9 +125,24 @@ a {
 }
 
 .brand-text {
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: -0.02em;
+}
+
+.header-nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.lang-btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
 }
 
 /* ==================
@@ -834,15 +854,51 @@ a {
 }
 
 @media (max-width: 768px) {
-    .hero { padding-top: 140px; }
+    .container { padding: 0 16px; }
+    
+    /* Header Responsive */
+    .brand-logo { width: 32px; height: 32px; }
+    .brand-text { font-size: 1.1rem; }
+    .header-nav { gap: 8px; }
+    .lang-btn { padding: 6px 10px; font-size: 0.8rem; }
+    .btn-glass { padding: 8px 12px; font-size: 0.85rem; }
+
+    .hero { padding-top: 130px; }
     .hero-title { font-size: 2.8rem; }
     .hero-subtitle { font-size: 1.1rem; }
-    .hero-actions { flex-direction: column; width: 100%; max-width: 300px; }
+    .hero-actions { flex-direction: column; width: 100%; max-width: 100%; align-items: stretch; margin-bottom: 60px; }
     
+    .btn-store { justify-content: center; }
+    .store-badge { right: 0; top: -12px; font-size: 0.65rem; padding: 2px 8px; }
+
     .glass-mockup { flex-direction: column; text-align: center; padding: 24px; transform: none; }
     .mockup-icon { width: 100px; height: 100px; }
     
+    /* Mobile App-like Vertical Timeline Mode */
+    .timeline-header { display: none; }
+    .timeline-row { align-items: flex-start; padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .timeline-track { 
+        height: auto; 
+        background: transparent; 
+        border: none; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 8px; 
+    }
+    .timeline-block { 
+        position: relative !important; 
+        left: 0 !important; 
+        width: 100% !important; 
+        height: auto; 
+        padding: 12px; 
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+    .timeline-block:empty { display: none !important; }
+    
     .floating-badge { display: none; }
+
+    .trust-grid { flex-direction: column; align-items: center; gap: 40px; }
     
     .bento-grid { grid-template-columns: 1fr; }
     .bento-large, .bento-xlarge { grid-column: span 1; }
@@ -856,4 +912,9 @@ a {
     .glass-card h2 { font-size: 2.2rem; }
     .glass-card { padding: 60px 24px; }
     .footer-content { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 400px) {
+    .brand-text { display: none; }
+    .hero-actions { max-width: 100%; }
 }
