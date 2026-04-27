@@ -1,5 +1,29 @@
-Italiano:
-Shift Helper è progettata con la massima attenzione alla privacy: non raccogliamo alcun dato personale degli utenti. Non salviamo informazioni come nomi, email, posizioni o dettagli sui turni. Tutto avviene localmente sul tuo dispositivo, senza connessioni a server esterni. La tua privacy è la nostra priorità!
+# Privacy Policy
 
-English:
-Shift Helper is designed with utmost privacy in mind: we do not collect any user data. We don't store info like names, emails, locations, or shift details. Everything stays local on your device, with no connections to external servers. Your privacy comes first!
+## Italiano
+
+ShiftHelper è costruita attorno alla privacy. Non raccogliamo, non archiviamo e non trasmettiamo alcun dato personale dell'utente.
+
+- **Nessun account richiesto** – Puoi usare l'app senza registrarti
+- **Nessun server esterno** – I tuoi dati non lasciano mai il tuo dispositivo
+- **100% offline** – L'app funziona completamente senza connessione internet
+- **Backup cifrati** – Le copie di sicurezza sono protette e restano sul tuo dispositivo
+
+Tutti i dati relativi ai turni, ai dipendenti e alle statistiche rimangono locali sul tuo smartphone. Non raccogliamo nomi, email, posizioni o informazioni personali. La tua privacy è una priorità assoluta.
+
+Per domande sulla privacy: shift.helper.support@gmail.com
+
+---
+
+## English
+
+ShiftHelper is built around privacy. We do not collect, store, or transmit any personal user data.
+
+- **No account required** – Use the app without signing up
+- **No external servers** – Your data never leaves your device
+- **100% offline** – The app works completely without an internet connection
+- **Encrypted backups** – Your backups are protected and stay on your device
+
+All shift, employee, and statistics data remain local on your smartphone. We do not collect names, emails, locations, or personal information. Your privacy is our top priority.
+
+For privacy questions: shift.helper.support@gmail.com
